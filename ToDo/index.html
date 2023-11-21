@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="To-Do List">
+	<meta name="keywords" content="To-Do, Tasks, List">
+	<meta name="author" content="Nik & Jörgen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
+	<title>Nik & Jörgens ToDo</title>
+</head>
+
+<body>
+	<h1>todos</h1>
+	<div id="container">
+		<form>
+			<button type="button" id="markAll">🔽</button>
+			<input type="text" id="todoInput" name="todoInput" placeholder="What needs to be done?">
+
+		</form>
+
+		<ul id="todoList">
+
+		</ul>
+
+		<p id="output" name="todoCount"></p>
+
+		<div id="filterBtn">
+			<button id="all" class="categoryBtn">All</button>
+			<button id="active" class="categoryBtn">Active</button>
+			<button id="completed" class="categoryBtn">Completed</button>
+
+			<button id="clear" onclick="delLine(0,1)">Clear Completed</button>
+		</div>
+	</div>
+
+	<footer>made by Nik and Jörgen <br>
+		this is just a tribute</footer>
+</body>
+
+</html>
